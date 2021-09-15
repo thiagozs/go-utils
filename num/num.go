@@ -28,6 +28,3 @@ func Str2Float64(value string) (float64, error) {
 	return fee, nil
 }
 
-func Int642Str(value int64) string {
-	return strconv.FormatInt(value, 10)
-}

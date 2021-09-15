@@ -51,3 +51,7 @@ func RandStringRunes(n int) string {
 	}
 	return string(b)
 }
+
+func Int642Str(value int64) string {
+	return strconv.FormatInt(value, 10)
+}
