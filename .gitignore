@@ -1,0 +1,6 @@
+examples/*
+!examples/.gitkeep
+
+hash/
+
+net/
