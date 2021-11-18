@@ -1,3 +1,3 @@
-module github.com/mercadobitcoin/go-utils
+module github.com/thiagozs/go-utils
 
-go 1.16
+go 1.17
