@@ -1,3 +1,5 @@
+package files
+
 import (
 	"io/ioutil"
 	"os"
