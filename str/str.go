@@ -19,7 +19,7 @@ func Float642Str(value float64) string {
 }
 
 func Float642StrPrec(value float64, precision int) string {
-	//return strconv.FormatFloat(value, 'f', 8, 64)
+	// return strconv.FormatFloat(value, 'f', 8, 64)
 	return strconv.FormatFloat(value, 'f', precision, 64)
 }
 
