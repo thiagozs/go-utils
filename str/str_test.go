@@ -57,7 +57,7 @@ func TestFloat642Str(t *testing.T) {
 
 	for _, test := range tests {
 
-		rr := Float642Str(test.value)
+		rr := Float64Str(test.value)
 
 		if rr != test.expected {
 			t.Errorf("Float64 to string: result '%f' expected '%s'\n", test.value, test.expected)
@@ -97,7 +97,7 @@ func TestFloat642StrPrec(t *testing.T) {
 
 	for _, test := range tests {
 
-		rr := Float642StrPrec(test.value, test.precision)
+		rr := Float64StrPrec(test.value, test.precision)
 
 		if rr != test.expected {
 			t.Errorf("Float64 to string precision: result '%f' expected '%s'\n", test.value, test.expected)
@@ -167,7 +167,7 @@ func TestInt642Str(t *testing.T) {
 
 	for _, test := range tests {
 
-		rr := Int642Str(test.value)
+		rr := Int64Str(test.value)
 
 		if rr != test.expected {
 			t.Errorf("Int64 to string: result '%d' expected '%s'\n", test.value, test.expected)

@@ -14,11 +14,11 @@ func TrimBreakLines(str string) string {
 	return strings.TrimSpace(s)
 }
 
-func Float642Str(value float64) string {
+func Float64Str(value float64) string {
 	return strconv.FormatFloat(value, 'f', 2, 64)
 }
 
-func Float642StrPrec(value float64, precision int) string {
+func Float64StrPrec(value float64, precision int) string {
 	// return strconv.FormatFloat(value, 'f', 8, 64)
 	return strconv.FormatFloat(value, 'f', precision, 64)
 }
@@ -40,7 +40,7 @@ func SubStr(input, anchor string) string {
 	return string(asRunes[lastIndex : lastIndex+length])
 }
 
-func RandStringRunes(n int) string {
+func RandStrRunes(n int) string {
 	var letterRunes = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
 	rand.Seed(time.Now().UnixNano())
@@ -52,6 +52,6 @@ func RandStringRunes(n int) string {
 	return string(b)
 }
 
-func Int642Str(value int64) string {
+func Int64Str(value int64) string {
 	return strconv.FormatInt(value, 10)
 }

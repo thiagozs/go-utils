@@ -1,11 +1,18 @@
 package files
 
 import (
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
 )
+
+func DirExists(folder string) bool {
+	info, err := os.Stat(folder)
+	if os.IsNotExist(err) {
+		return false
+	}
+	return info.IsDir()
+}
 
 func FileExists(filename string) bool {
 	info, err := os.Stat(filename)
@@ -23,7 +30,7 @@ func DeleteFile(str string) error {
 }
 
 func WriteFile(str string, bytes []byte) error {
-	return ioutil.WriteFile(str, bytes, 0644)
+	return os.WriteFile(str, bytes, 0644)
 }
 
 func MkdirAll(path string) error {
